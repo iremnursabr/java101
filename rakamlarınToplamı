@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class RakamlariTopla 
+{
+      public static void main(String[] args)
+    {
+        Random rastgele = new Random();
+        int sayi = rastgele.nextInt();
+        sayi = Math.abs(sayi);
+        System.out.println(sayi+" sayısının rakamları toplamı : "+RakamlariTopla(sayi));
+    }
+    
+    
+    public static int RakamlariTopla(int sayi)
+     {
+        int toplam = 0;
+        
+        while(sayi > 0) {
+            toplam += (sayi % 10);
+            sayi /= 10;
+        }
+        
+        return toplam;
+    }
+
+}
+
+  
