@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class daysOfTheWeek 
+{
+
+    public static void main(String[] args) 
+    {
+       
+        String [] days = {"Sunday","Monday","Tuesday","Wednesday","Thurday","Friday","Saturday"};
+        
+        
+        Scanner scanner =new Scanner (System.in);
+        
+        System.out.println("after how many days...");
+        int day=scanner.nextInt();
+        
+        int leapDay =day%7;
+        
+        System.out.println("today is: "+ days[leapDay]);
+    
+        
+    }
+
+}
